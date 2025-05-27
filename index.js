@@ -52,7 +52,9 @@ app.get('/listSchools', async (req, res) => {
     res.status(500).json({ error: 'Server error' });
   }
 });
-
+app.get('/',async(req,res)=>{
+res.send("Welcome to backend i have created for School api .Do have a look at my portfolio :https://suyashpathak-portfolio.netlify.app/")
+});
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
 });
